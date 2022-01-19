@@ -2,7 +2,7 @@ import path from "path";
 
 describe("index.html", () => {
   beforeAll(async () => {
-    const URL = `file:///${path.resolve(__dirname, "./solution.html")}`;
+    const URL = `file:///${path.resolve(__dirname, "./index.html")}`;
     await page.setViewport({'width': 1920, 'height': 1080 });
     await page.goto(URL);
   });
