@@ -55,7 +55,7 @@
     
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
           <h1 class="display-4 fw-normal">Your Selected Plan</h1>
-          <ul class="list-group mb-3 w-50 mx-auto">
+          <ul class="list-group mb-3 uw-50 mx-auto">
             <li class="list-group-item d-flex justify-content-between lh-sm">
               <div>
                 <h6 class="my-0">Plan</h6>
@@ -98,9 +98,9 @@
                   <li>Help center access</li>
                 </ul>
                 <button id="freebutton" 
-                        type="button" 
-                        class="w-100 btn btn-lg btn-outline-primary">
-                        onClick=elect</button>
+                type="button" 
+                class="w-100 btn btn-lg btn-primary"
+                onclick="selectPlan( 'Free', 0 )">Select</button>
               </div>
             </div>
           </div>
@@ -118,7 +118,10 @@
                   <li>Priority email support</li>
                   <li>Help center access</li>
                 </ul>
-                <button id="probutton" type="button" class="w-100 btn btn-lg btn-primary">Select</button>
+                <button id="probutton" 
+                        type="button" 
+                        class="w-100 btn btn-lg btn-primary"
+                        onclick="selectPlan('Pro', 15)">Select</button>
               </div>
             </div>
           </div>
@@ -136,7 +139,10 @@
                   <li>Phone and email support</li>
                   <li>Help center access</li>
                 </ul>
-                <button id="enterprisebutton" type="button" class="w-100 btn btn-lg btn-primary">Select</button>
+                <button id="enterprisebutton" 
+                        type="button" 
+                        class="w-100 btn btn-lg btn-primary"
+                        onclick="selectPlan('Enterprise', 29)">Select</button>
               </div>
             </div>
           </div>
@@ -237,5 +243,6 @@
         </div>
       </footer>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
